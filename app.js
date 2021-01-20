@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const feedRoutes = require('./routes/feed');
 const visitorRoutes = require('./routes/visitor')
 const hostRoutes = require('./routes/host')
+const adminRoutes = require('./routes/admin')
 
 const app = express();
 const url =
@@ -22,7 +23,8 @@ app.use((req, res, next) => {
 app.use('/feed', feedRoutes);
 
 app.use('/visitor' , visitorRoutes);
-app.use('/host' , hostRoutes)
+app.use('/host' , hostRoutes);
+app.use('/admin' , adminRoutes)
 
 app.listen(5000);
 
