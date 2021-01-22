@@ -6,6 +6,8 @@ const visitorRoutes = require('./routes/visitor')
 const hostRoutes = require('./routes/host')
 const adminRoutes = require('./routes/admin')
 
+
+
 const app = express();
 const url =
 mongoose.connect('mongodb+srv://salifu:tilyvan2011@cluster0.chugx.mongodb.net/MINIProject?retryWrites=true&w=majority',{ useNewUrlParser: true }, () => console.log('connected to database')

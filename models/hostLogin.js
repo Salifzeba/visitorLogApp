@@ -17,8 +17,13 @@ let hostschema = mongoose.Schema({
         type:String,
         required:true
     },
+    password:{
+        type:String,
+        required:true
+    },
     
     
-},{timestamps:true});
+},
+{timestamps:true});
 
 let host = module.exports = mongoose.model('host', hostSchema)

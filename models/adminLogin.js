@@ -12,4 +12,4 @@ let adminschema = mongoose.Schema({
 },
     {timestamps:true});
 
-let visitor = module.exports = mongoose.model('admin', adminSchema)
+let admin= module.exports = mongoose.model('admin', adminSchema)
